@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BabaStudio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- Nav-->
+        <nav>
+            <div class="nav-wrapper blue">
+                <div class="container">
+                    <a href="#" class="brand-logo center">Babastudio</a>
+                    <ul class="right">
+                        <li><a href="#" class="clear-btn btn blue lighten-3">clear all</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- /Nav-->
+        <br>
+        <div class="container">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">
+                        Insert Data Paket kursus
+                    </span>
+                    <form class="col s12">
+                        <div class="row">
+                        <div class="input-field col s6">
+                            <input placeholder="Nama-paket" id="nama-paket" type="text" >
+                            <label for="first_name">Nama Paket</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="harga-paket" type="number">
+                            <label for="last_name">Harga Paket</label>
+                        </div>
+                        </div>
+
+                        <button class="add-btn btn blue darken-3">
+                            <i class="fa fa-plus"></i> Tambah data Paket
+                        </button>
+                         <button class="update-btn btn orange">
+                                <i class="fa fa-pencil-square-o"></i> Update data paket
+                        </button>
+                        <button class="delete-btn btn red">
+                                <i class="fa fa-remove"></i> Hapus data
+                        </button>
+                        <button class="back-btn btn grey pull-right">
+                                <i class="fa fa-backward"></i> Back
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        <!-- display inputan -->
+        <h3 class="center-align">Total harga <span class="total-harga">0</span></h3>
+        <ul id="item-list" class="collection">
+<!--            <li class="collection-item" id="item-0">
+                <strong>SEO :</strong><em>Rp. 120000</em>
+                <a href="#" class="secondary-content">
+                    <i class="fa fa-pencil"></i>
+                </a>
+            </li>
+            <li class="collection-item" id="item-0">
+                    <strong>Google Adword :</strong><em>Rp. 420000</em>
+                    <a href="#" class="secondary-content">
+                        <i class="fa fa-pencil"></i>
+                    </a>
+            </li>
+            <li class="collection-item" id="item-0">
+                    <strong>Programming :</strong><em>Rp. 120000</em>
+                    <a href="#" class="secondary-content">
+                        <i class="fa fa-pencil"></i>
+                    </a>
+            </li>
+-->
+        </ul>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="App.js"></script>
+    </body>
+</html>

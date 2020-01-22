@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+	<div class="container-fluid">
+		<div class="row"><br><br></div> 
+		<div class="row">
+			<div class="col col-md-6">
+				<img class="img img-fluid" src="Gintama.jpg">
+			</div>
+			<div class="col col-md-6">
+				<h1>Login</h1>
+				<h4>Belum memiliki akun?<a href="#">Daftar</a></h4>
+				<form id="form">
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="text" minlength="4" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+				    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				    <input type="checkbox" onclick="showP()">Show Password
+				  <div class="form-group form-check">
+				    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+				    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+				  </div>
+				  <input type="submit" id="submit" onclick="checkP()"  class="btn btn-primary" value="submit">
+
+				 <a href="#">Lupa password</a>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	function showP(){
+		const x = document.getElementById("exampleInputPassword1");
+		if( x.type === "password"){
+			x.type = "text";
+		}else{
+			x.type = "password";
+		}
+	}
+
+const form 		= document.querySelector('#form');
+
+	function checkP(e){
+		const pass = document.getElementById("exampleInputPassword1").value;
+
+		if(pass.length < 4){
+			alert('Pass kurang bos');
+			e.preventDefault();
+		}else{
+			alert('congrats masuk coy');
+		}
+
+	}
+</script>
+</body>
+</html>
